@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }) );
 
-app.use(cors({origin: process.env.CORS_ORIGIN || '*'}))
+app.use(cors({origin:'*'}))
 
 app.use('/', require('./routes/route'));
 
